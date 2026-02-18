@@ -1,0 +1,138 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;  /* ✅ disables scrolling */
+    box-sizing: border-box;
+
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#board {
+    padding: 10px;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+/*td,th,tr{
+    color: green;
+}
+
+
+
+
+
+#secondWindow {
+    background-color: black;
+    max-width: 600px;
+    min-height: 400px;
+}
+
+#moveTable {
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+}
+
+#controls {
+    position: absolute;
+    bottom: 0;
+}
+#status{
+    color: green;
+}*/
+.row{
+    box-shadow: 2cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#moveTable{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(19, 26, 250, 0.4); /* White background with 80% opacity */
+    overflow-y: auto;
+    display: block;
+    border-collapse: collapse;
+}
+
+th,td,td{
+    color:aliceblue;
+}
+.navbar{
+    margin-top: 0%;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+}
+#logo {
+    color:rgb(173, 23, 248);
+    position: relative;
+    left: 40%;
+
+}
+.green{
+    color: aliceblue;
+    padding-left: 200px;
+    font-size: 30px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.captured-container {
+    width: 80px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    background: #f5f5f5;
+}
+
+.captured-piece {
+    font-size: 24px;
+    margin: 5px;
+}
+#pgn {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#pgn thead {
+    position: sticky;
+    top: 0;
+    background-color: rgb(75, 75, 236);
+    z-index: 2;
+}
+.capturePieces{
+    width: 400px; /* Matches chessboard width */
+    max-height: 80px; /* Limit height to prevent excessive growth */
+    display: flex;
+    flex-wrap: wrap; /* Wraps to a new row if needed */
+    justify-content: center;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+.captured-pieces {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new row */
+    justify-content: center;
+    gap: 5px; /* Adds spacing between pieces */
+}
